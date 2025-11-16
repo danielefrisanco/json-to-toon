@@ -1,0 +1,55 @@
+{
+  "string_quoted": "A regular string with spaces and an 🍎 emoji.",
+  "number_integer": 42,
+  "number_float": -1.5e-3,
+  "boolean_true": true,
+  "boolean_false": false,
+  "null_value": null,
+  "empty_object": {},
+  "nested_object": {
+    "key": "value"
+  },
+  "empty_array": [],
+  "scalar_array": [
+    1,
+    3,
+    "cio"
+  ],
+  "hash_array": [
+    {
+      "id": "123",
+      "name": "Daniele"
+    },
+    {
+      "id": "122",
+      "name": "Frisanco"
+    }
+  ],
+  "mixed_array": [
+    1,
+    "two",
+    true,
+    null,
+    {
+      "nested_key": "nested-value",
+      "nested_comma": " , ",
+      "nested_hash": {
+        "a": "A",
+        "b": "B"
+      }
+    },
+    [
+      4,
+      5,
+      "76g"
+    ]
+  ],
+  "unicode_characters": "Héllø World! 🌍",
+  "string_with_outer_spaces": " not a space ",
+  "string_with_escaped_quotes": " 'hey - ' \"  `` ",
+  "string_with_commas": " , ",
+  "string_with_newline": " line\nnewline ",
+  "string_start_with_dash": "-end",
+  "string_start_with_dash_and_space": "- end"
+
+}

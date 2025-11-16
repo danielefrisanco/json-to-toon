@@ -1,0 +1,32 @@
+# This is the configuration file for RuboCop, which enforces the Ruby style guide.
+#
+# Based on standard Ruby/Rails conventions for modern development.
+# The default target Ruby version is set to match the gemspec.
+
+
+# Global settings for all cops
+AllCops:
+  TargetRubyVersion: 3.1 # Updated to match Ruby 3.1 in your local setup
+  NewCops: enable
+  # Exclude common non-source files
+  Exclude:
+    - 'bin/**/*'
+    - 'vendor/**/*'
+    - 'tmp/**/*'
+    - 'Rakefile'
+    - 'exe/**/*'
+    # .gemspec is excluded to prevent conflicts with specific gemspec cops
+
+
+# Relax line length for better readability in modern editors
+Layout/LineLength:
+  Max: 120
+  
+# Allow constant definition within RSpec blocks (e.g., `let` blocks)
+Lint/ConstantDefinitionInBlock:
+  Exclude:
+    - 'spec/**/*'
+
+# Relax self requirement, as it's often redundant in Ruby
+Style/RedundantSelf:
+  Enabled: false
